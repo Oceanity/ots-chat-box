@@ -1,18 +1,18 @@
 {
-  "name": "ots-chat-box",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Oceanity",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "color": "^3.1.2",
-    "express": "^4.17.1",
-    "socket.io": "^2.3.0",
-    "tmi.js": "^1.5.0"
-  }
+    "name": "ots-chat-box",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Oceanity",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "color": "^3.1.2",
+        "express": "^4.17.1",
+        "socket.io": "^2.3.0",
+        "tmi.js": "^1.5.0"
+    }
 }

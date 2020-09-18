@@ -68,8 +68,22 @@ img {
         }
 
         .content {
+            display: flex;
+            flex-wrap: wrap;
             border-left: 4px solid rgba(255, 255, 255, 0.2);
             padding: 0 8px 4px;
+
+            * {
+                margin: 0 4px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
         }
 
         .link {

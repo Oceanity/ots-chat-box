@@ -63,8 +63,19 @@ img {
   height: auto;
 }
 .chatbox li .content {
+  display: flex;
+  flex-wrap: wrap;
   border-left: 4px solid rgba(255, 255, 255, 0.2);
   padding: 0 8px 4px;
+}
+.chatbox li .content * {
+  margin: 0 4px;
+}
+.chatbox li .content *:first-child {
+  margin-left: 0;
+}
+.chatbox li .content *:last-child {
+  margin-right: 0;
 }
 .chatbox li .link {
   white-space: nowrap;

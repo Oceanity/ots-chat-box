@@ -1,5 +1,6 @@
 :root {
-    --background: rgba(0, 0, 0, 0.5);
+    --container-fg: #fff;
+    --container-bg: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -30,8 +31,8 @@ img {
     height: 100vh;
     width: 100vw;
     list-style-type: none;
-    color: #fff;
-    background: var(--background);
+    color: var(--container-fg);
+    background: var(--container-bg);
 
     li {
         display: flex;
@@ -48,12 +49,36 @@ img {
         }
 
         &.bg {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        &.inline {
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 5px;
+
+            .name {
+                align-self: flex-start;
+                margin-bottom: 0;
+
+                &:after {
+                    content: ":";
+                    color: var(--container-fg);
+                    margin-right: 10px;
+                }
+            }
+
+            .content {
+                display: inline;
+                border-left: none;
+                padding: 0;
+            }
         }
 
         .name {
             display: flex;
             flex-direction: row;
+            flex: 0 0 auto;
             align-items: center;
             margin: 0 0 5px;
             font-size: 22px;
@@ -75,6 +100,7 @@ img {
 
             * {
                 margin: 0 4px;
+                vertical-align: top;
 
                 &:first-child {
                     margin-left: 0;

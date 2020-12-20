@@ -106,9 +106,9 @@ img {
   flex-wrap: wrap;
   border-left: 4px solid rgba(255, 255, 255, 0.2);
   padding: 0 8px 4px;
+  white-space: pre-wrap;
 }
 .chatbox li .content * {
-  margin: 0 4px;
   vertical-align: top;
 }
 .chatbox li .content *:first-child {

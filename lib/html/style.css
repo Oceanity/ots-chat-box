@@ -134,13 +134,12 @@ img {
 .chatbox li .content {
   border-left: 4px solid rgba(255, 255, 255, 0.2);
   padding: 0 8px 4px;
-  white-space: pre-wrap;
 }
 .chatbox li .content .emote {
   display: inline-block;
+  vertical-align: middle;
   width: var(--emote-size);
   height: var(--emote-size);
-  vertical-align: middle;
 }
 .chatbox li .content .emote img {
   width: 100%;

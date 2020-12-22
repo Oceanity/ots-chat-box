@@ -1,13 +1,14 @@
 {
     "name": "ots-chat-box",
     "version": "1.1.4",
-    "description": "",
+    "description": "On screen Twitch chat display for OBS",
     "main": "index.js",
     "scripts": {
         "start": "node index.js"
     },
     "author": "Oceanity",
     "license": "MIT",
+    "repository": "https://github.com/oceanity/ots-chat-box",
     "dependencies": {
         "chalk": "^4.1.0",
         "color": "^3.1.2",

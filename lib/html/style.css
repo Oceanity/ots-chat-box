@@ -6,6 +6,8 @@
   --username-font-size: 20px;
   --badge-size: 24px;
   --emote-size: 32px;
+  --stroke-color: #000;
+  --name-stroke-color: #000;
   /* Highlighted Message Variables */
   --highlighted-border-width: 5px;
   --highlighted-bg-filter: brightness(0.7);
@@ -115,6 +117,12 @@ img {
   display: inline;
   border-left: none;
   padding: 0;
+}
+.chatbox li.name-stroke .name {
+  text-shadow: -1px 1px 0 var(--name-stroke-color), 1px 1px 0 var(--name-stroke-color), 1px -1px 0 var(--name-stroke-color), -1px -1px 0 var(--name-stroke-color);
+}
+.chatbox li.stroke {
+  text-shadow: -1px 1px 0 var(--stroke-color), 1px 1px 0 var(--stroke-color), 1px -1px 0 var(--stroke-color), -1px -1px 0 var(--stroke-color);
 }
 .chatbox li .name {
   display: flex;
